@@ -11,3 +11,12 @@ Sleuthkit (fls and mactime)
 
 This command will search the mactime body file for all entries on Apr 27 2015, from
 12:58 to 13:02 (-d 5), and will output 20 of the most common keywords for those 5 minutes.
+
+### Create a [body file](http://wiki.sleuthkit.org/index.php?title=Body_file)
+With sleuthkit installed:
+* fls -r -m / [targetDrive]
+* fls -m "C:/" -o 63 -r images/disk.dd > body.txt
+* fls -o 63 -f openbsd -m / -r images/disk.dd > body.txt
+* fls -o 3233664 -f openbsd -m /var/ -r images/disk.dd >> body.txt
+
+For more information see: http://wiki.sleuthkit.org/index.php?title=Timelines
