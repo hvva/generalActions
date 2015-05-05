@@ -1,4 +1,4 @@
-## Generic Action Finder
+## Digital Forensics Generic Action Finder
 A small script to attempt to associate created digital artifacts with general user activities in a suspect system.
 This script collects all keywords for files created/accessed/modified at a particular time range. These keywords
 can be used to start to understand what actions where happing at the specified time.
